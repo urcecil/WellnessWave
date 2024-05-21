@@ -49,8 +49,6 @@
         kerangka html dan css dan membuat kode kalkuator BMI.
 
         Nah itu saja perkenalan dari kelompok kami,ayo lihat halaman selanjutnya :D
-
-        <img src="kalkulator.jpg" width="400px">
     </p>
 </pre>
 </body>
