@@ -1,4 +1,16 @@
+@media only screen and (max-width: 600px) {
+  /* Your smartphone-specific CSS code here */
+  body {
+    font-size: 14px;
+  }
 
+  /* Example: */
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+    
+}
 body, html {
     margin: 0;
     padding: 0;
