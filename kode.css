@@ -58,16 +58,20 @@ nav {
 
 .parallax-container.page1 {
     background-image: url('bmiii.png');
-    transition: opacity 1s ease;
-    opacity: 1;
+    background-size: cover;
+    background-position: center;
 }
 
 .parallax-container.page2 {
     background-image: url('pls.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .parallax-container.page3 {
     background-image: url('UwU.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .content {
