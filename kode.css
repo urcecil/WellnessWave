@@ -1,3 +1,15 @@
+@media (max-width: 600px) {
+    /* Gaya untuk layar kecil, seperti ponsel */
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    /* Gaya untuk layar sedang, seperti tablet */
+}
+
+@media (min-width: 1201px) {
+    /* Gaya untuk layar besar, seperti desktop */
+}
+
 body, html {
     margin: 0;
     padding: 0;
