@@ -2,50 +2,46 @@ body, html {
    margin: 0;
    padding: 0;
    height: 100%;
-   font-family: Arial, sans-serif; /* Ganti font sesuai keinginan */
+   font-family: Arial, sans-serif;
 }
 
 body {
-      background-repeat: no-repeat;
-      background-size: cover;}
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 
 header {
-   text-align: center; 
+   text-align: center;
 }
 
 nav {
    width: 80%;
-   height: 60px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    background-color: black;
-   transform: translate(6%, 50%);
    border-radius: 5px;
    padding: 0 5%;
-   margin: 0 auto; 
+   margin: 0 auto;
 }
 
 .KLIK h3 {
-   font-family: 'Bebas Neue', cursive;
-   font-size: 24px; 
-   letter-spacing: 1px; 
-   color: aqua; 
+   font-size: 24px;
+   letter-spacing: 1px;
+   color: aqua;
 }
-
 
 .menu ul {
    display: flex;
    justify-content: center;
    align-items: center;
    list-style: none;
-   column-gap: 30px;
+   column-gap: 2em;
 }
 
 .menu ul li a {
    text-decoration: none;
-   color: aqua; /* Mengubah warna menjadi aqua */
-   font-family: 'poppins';
+   color: aqua;
 }
 
 .menu ul li a:hover {
@@ -59,26 +55,19 @@ nav {
 }
 
 .parallax-container.page1 {
-   background-image: url('bmiii.png'); /* Gambar latar belakang halaman 1 */
-   transition: opacity 1s ease; /* Transisi untuk opacity saat mengganti halaman */
-   opacity: 1; /* Atur opacity menjadi 1 agar latar belakang halaman 1 terlihat */
-}
-
-.parallax-container.page2 {
-   background-image: url('pls.png'); /* Gambar latar belakang halaman 2 */
-}
-
-.parallax-container.page3 {
-   background-image: url('UwU.png'); /* Gambar latar belakang halaman 3 */
+   background-image: url('bmiii.png');
+   transition: opacity 1s ease;
+   opacity: 1;
 }
 
 .content {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-55%, -50%);
+   transform: translate(-50%, -50%);
    text-align: center;
    color: black;
+   width: 90%;
 }
 
 h1, p {
@@ -86,10 +75,49 @@ h1, p {
 }
 
 h1 {
-   font-size: 36px;
+   font-size: 2.5rem;
 }
 
 p {
-   font-size: 18px;
+   font-size: 1rem;
 }
 
+@media (max-width: 600px) {
+   nav {
+       flex-direction: column;
+       align-items: flex-start;
+       height: auto;
+   }
+
+   .menu ul {
+       flex-direction: column;
+       row-gap: 10px;
+   }
+
+   .content {
+       transform: translate(-50%, -50%);
+       width: 90%;
+   }
+
+   .content p {
+       font-size: 0.9rem;
+   }
+
+   h1 {
+       font-size: 2rem;
+   }
+
+   .KLIK {
+       display: block;
+   }
+
+   .menu {
+       display: none;
+   }
+
+   .KLIK:hover + .menu, .menu:hover {
+       display: flex;
+       flex-direction: column;
+       row-gap: 10px;
+   }
+}
