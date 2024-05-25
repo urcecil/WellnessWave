@@ -5,6 +5,10 @@ body, html {
    font-family: Arial, sans-serif; /* Ganti font sesuai keinginan */
 }
 
+body {
+      background-repeat: no-repeat;
+      background-size: cover;}
+
 header {
    text-align: center; 
 }
