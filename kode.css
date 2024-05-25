@@ -64,6 +64,10 @@ nav {
    background-image: url('pls.png'); /* Gambar latar belakang halaman 2 */
 }
 
+.parallax-container.page3 {
+   background-image: url('UwU.png'); /* Gambar latar belakang halaman 3 */
+}
+
 .content {
    position: absolute;
    top: 50%;
@@ -84,3 +88,4 @@ h1 {
 p {
    font-size: 18px;
 }
+
