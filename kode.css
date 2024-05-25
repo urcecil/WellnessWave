@@ -21,12 +21,12 @@ nav {
     align-items: center;
     background-color: black;
     border-radius: 5px;
-    padding: 0 5%;
+    padding: 10px 5%;
     margin: 0 auto;
 }
 
 .KLIK h3 {
-    font-size: 24px;
+    font-size: 24px; /* Mengembalikan ukuran font ke 24px */
     letter-spacing: 1px;
     color: aqua;
 }
@@ -44,6 +44,7 @@ nav {
 .menu ul li a {
     text-decoration: none;
     color: aqua;
+    font-size: 16px; /* Mengembalikan ukuran font ke 16px */
 }
 
 .menu ul li a:hover {
@@ -54,24 +55,21 @@ nav {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .parallax-container.page1 {
     background-image: url('bmiii.png');
-    background-size: cover;
-    background-position: center;
 }
 
 .parallax-container.page2 {
     background-image: url('pls.png');
-    background-size: cover;
-    background-position: center;
 }
 
 .parallax-container.page3 {
     background-image: url('UwU.png');
-    background-size: cover;
-    background-position: center;
 }
 
 .content {
@@ -89,11 +87,11 @@ h1, p {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 36px; /* Mengembalikan ukuran font ke 36px */
 }
 
 p {
-    font-size: 1rem;
+    font-size: 18px; /* Mengembalikan ukuran font ke 18px */
 }
 
 @media (max-width: 600px) {
@@ -101,7 +99,7 @@ p {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
-        padding: 10px;
+        padding: 20px; /* Menambah padding */
     }
 
     .menu ul {
@@ -114,14 +112,6 @@ p {
     .content {
         transform: translate(-50%, -50%);
         width: 95%;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 0.9rem;
     }
 
     .KLIK {
