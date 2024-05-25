@@ -1,123 +1,136 @@
 body, html {
-   margin: 0;
-   padding: 0;
-   height: 100%;
-   font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 body {
-   background-repeat: no-repeat;
-   background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
-   text-align: center;
+    text-align: center;
 }
 
 nav {
-   width: 80%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   background-color: black;
-   border-radius: 5px;
-   padding: 0 5%;
-   margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0 5%;
+    margin: 0 auto;
 }
 
 .KLIK h3 {
-   font-size: 24px;
-   letter-spacing: 1px;
-   color: aqua;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: aqua;
 }
 
 .menu ul {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   list-style: none;
-   column-gap: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    column-gap: 2em;
+    margin: 0;
+    padding: 0;
 }
 
 .menu ul li a {
-   text-decoration: none;
-   color: aqua;
+    text-decoration: none;
+    color: aqua;
 }
 
 .menu ul li a:hover {
-   color: #000;
+    color: #000;
 }
 
 .parallax-container {
-   position: relative;
-   height: 100vh;
-   overflow: hidden;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .parallax-container.page1 {
-   background-image: url('bmiii.png');
-   transition: opacity 1s ease;
-   opacity: 1;
+    background-image: url('bmiii.png');
+    transition: opacity 1s ease;
+    opacity: 1;
+}
+
+.parallax-container.page2 {
+    background-image: url('pls.png');
+}
+
+.parallax-container.page3 {
+    background-image: url('UwU.png');
 }
 
 .content {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
-   color: black;
-   width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: black;
+    width: 90%;
 }
 
 h1, p {
-   margin: 0;
+    margin: 0;
 }
 
 h1 {
-   font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 p {
-   font-size: 1rem;
+    font-size: 1rem;
 }
 
 @media (max-width: 600px) {
-   nav {
-       flex-direction: column;
-       align-items: flex-start;
-       height: auto;
-   }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
 
-   .menu ul {
-       flex-direction: column;
-       row-gap: 10px;
-   }
+    .menu ul {
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
 
-   .content {
-       transform: translate(-50%, -50%);
-       width: 90%;
-   }
+    .content {
+        transform: translate(-50%, -50%);
+        width: 95%;
+    }
 
-   .content p {
-       font-size: 0.9rem;
-   }
+    h1 {
+        font-size: 2rem;
+    }
 
-   h1 {
-       font-size: 2rem;
-   }
+    p {
+        font-size: 0.9rem;
+    }
 
-   .KLIK {
-       display: block;
-   }
+    .KLIK {
+        display: block;
+    }
 
-   .menu {
-       display: none;
-   }
+    .menu {
+        display: none;
+    }
 
-   .KLIK:hover + .menu, .menu:hover {
-       display: flex;
-       flex-direction: column;
-       row-gap: 10px;
-   }
+    .KLIK:hover + .menu, .menu:hover {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
 }
