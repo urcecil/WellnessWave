@@ -48,29 +48,3 @@ nav {
    color: #000;
 }
 
-.parallax-container {
-   position: relative;
-   height: 100vh;
-   overflow: hidden;
-}
-
-.parallax-container.page1 {
-   background-image: url('bmiii.png'); /* Gambar latar belakang halaman 1 */
-   transition: opacity 1s ease; /* Transisi untuk opacity saat mengganti halaman */
-   opacity: 1; /* Atur opacity menjadi 1 agar latar belakang halaman 1 terlihat */
-}
-
-.parallax-container.page2 {
-   background-image: url('pls.png'); /* Gambar latar belakang halaman 2 */
-}
-
-.content {
-   position: absolute;
-   top: 70%; /* Ubah posisi top sesuai kebutuhan */
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
-   color: black;
-   margin-top: 20px; /* Tambahkan margin atas */
-}
-
