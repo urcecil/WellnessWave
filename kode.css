@@ -107,37 +107,3 @@ p {
     font-size: 18px; /* Mengembalikan ukuran font ke 18px */
 }
 
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding: 20px; /* Menambah padding */
-    }
-
-    .menu ul {
-        flex-direction: column;
-        row-gap: 10px;
-        padding: 0;
-        margin: 0;
-    }
-
-    .content {
-        transform: translate(-50%, -50%);
-        width: 95%;
-    }
-
-    .KLIK {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .KLIK:hover + .menu, .menu:hover {
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-    }
-}
