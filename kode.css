@@ -48,30 +48,21 @@ nav {
 
 
 .menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #F8E7ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    column-gap: 30px;
 }
 
-.menu li {
-  float: left;
-  border-right:3px solid #FACCCE;
+.menu ul li a {
+    text-decoration: none;
+    color: aqua; /* Mengubah warna menjadi aqua */
+    font-family: 'poppins';
 }
 
-li a {
-  display: block;
-  color: #E3549B;
-  text-align: center;
-  padding: 30px 80px;
-  text-decoration: light;
-  font-size:30px;
-  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 350px #e60073;
-}
-
-li a:hover {
-  background-color: #FACCCE;
+.menu ul li a:hover {
+    color: #000;
 }
 
 .parallax-container {
